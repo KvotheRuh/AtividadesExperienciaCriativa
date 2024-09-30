@@ -1,0 +1,12 @@
+
+{% extends "base1.html"%}
+{% block content %}
+<h2>Atuadores</h2>
+<ul>
+    {% for key, value in atuadores.items() %}
+        <li>{{ key }} : {{ value }}</li>
+    {% endfor %}
+    
+</ul>
+<p>Voltar para <a href="/home">página inicial</a>!</p>
+{% endblock %}

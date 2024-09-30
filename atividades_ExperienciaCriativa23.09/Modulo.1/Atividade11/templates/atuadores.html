@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atuadores</title>
+</head>
+<body>
+
+</body>
+    {% extends "base1.html"%}
+    {% block content %}
+    <h2>Atuadores</h2>
+    <ul>
+        {% for key, value in atuadores.items() %}
+            <li>{{ key }} : {{ value }}</li>
+        {% endfor %}
+        
+    </ul>
+    <p>Voltar para <a href="/">página inicial</a>!</p>
+    {% endblock %}
+</html>
