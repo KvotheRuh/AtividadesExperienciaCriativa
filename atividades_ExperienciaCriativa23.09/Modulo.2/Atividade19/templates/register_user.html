@@ -1,0 +1,13 @@
+{% extends "base1.html"%}
+{% block content %}
+<body>
+    <h3>Cadastrar Usuários</h3>
+    <form action="http://localhost:5000/add_user" method="post">
+        <p>Usuário:</p>
+        <p><input type="text" name="user" placeholder="User" required></p>
+        <p>Senha:</p>
+        <p><input type="text" name="password" placeholder="Password" required></p>
+        <p><input type="submit" value="Cadastrar"></p>
+    </form>
+</body>
+{% endblock %}
