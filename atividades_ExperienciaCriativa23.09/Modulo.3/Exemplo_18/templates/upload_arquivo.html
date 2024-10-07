@@ -1,0 +1,9 @@
+{% extends "base1.html"%}
+{% block content %}
+<h3>Upload Arquivos</h3>
+<form action="/upload_file" method="post" enctype="multipart/form-data">
+    <input type="file" name="arquivo">
+    <input type="submit">
+</form>
+<p>Voltar para <a href="/home">página inicial</a>!</p>
+{% endblock %}
