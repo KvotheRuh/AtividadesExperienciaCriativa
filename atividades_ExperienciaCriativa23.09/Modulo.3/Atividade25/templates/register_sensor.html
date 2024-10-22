@@ -1,0 +1,13 @@
+{% extends "base1.html"%}
+{% block content %}
+<body>
+    <h3>Cadastrar Sensores</h3>
+    <form action="http://localhost:5000/add_sensor" method="post">
+        <p>Sensor:</p>
+        <p><input type="text" name="sensor" placeholder="Sensor" required></p>
+        <p>Leitura:</p>
+        <p><input type="text" name="leitura" placeholder="Leitura" required></p>
+        <p><input type="submit" value="Cadastrar"></p>
+    </form>
+</body>
+{% endblock %}

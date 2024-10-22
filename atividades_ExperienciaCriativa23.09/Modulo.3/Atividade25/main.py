@@ -101,16 +101,6 @@ def handle_mqtt_message(client, userdata, message):
 
 #Upload Arquivo
 
-# @app.route('/upload_arquivo', methods = ['GET'])
-# def upload_arquivo():
-#     return render_template("upload_arquivo.html")
-
-# @app.route("/upload_file", methods=['POST'])
-# def upload_file():
-#     f = request.files['arquivo'] 
-#     f.save(f'static/imgs/{f.filename}')
-#     return "Ok!"
-
 @app.route('/upload_arquivo', methods = ['GET'])
 def upload_arquivo():
     return render_template("upload_arquivo.html")
@@ -119,7 +109,7 @@ def upload_arquivo():
 def upload_file():
      if request.method == 'POST':
         f = request.files['file'] 
-        save_pasta = 'static/imgs/'
+        save_pasta = 'static/img/'
         if not os.path.exists(save_pasta):
             os.makedirs(save_pasta)
 

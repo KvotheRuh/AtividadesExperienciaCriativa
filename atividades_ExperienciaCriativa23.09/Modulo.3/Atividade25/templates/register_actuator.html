@@ -1,0 +1,13 @@
+{% extends "base1.html"%}
+{% block content %}
+<body>
+    <h3>Cadastrar Atuadores</h3>
+    <form action="http://localhost:5000/add_actuator" method="post">
+        <p>Atuador:</p>
+        <p><input type="text" name="atuador" placeholder="Atuador" required></p>
+        <p>Quantidade:</p>
+        <p><input type="text" name="quantidade" placeholder="Quantidade" required></p>
+        <p><input type="submit" value="Cadastrar"></p>
+    </form>
+</body>
+{% endblock %}

@@ -1,0 +1,15 @@
+<head>
+    <link rel="stylesheet" href="/static/css/erro.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/erro.css') }}">
+    <script src="https://kit.fontawesome.com/3a9ade90d2.js" crossorigin="anonymous"></script>
+    {% block title %}<title>Erro 500</title>{% endblock %}
+</head>
+<div class="container">
+    <div class="erro">
+        <i class="fas fa-exclamation-triangle" style="font-size: 200px;"></i>
+        <h3>Erro 500</h3>
+        <p> Erro ao conectar com  o servidor</p>
+        <p> Tente novamente mais tarde!!!</p>
+        <p id="voltar">Voltar para<a href="/home">página inicial</a>!</p>
+    </div>
+</div>

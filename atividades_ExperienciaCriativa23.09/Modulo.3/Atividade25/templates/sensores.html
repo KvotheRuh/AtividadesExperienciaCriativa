@@ -1,0 +1,11 @@
+{% extends "base1.html"%}
+{% block content %}
+<h3>Sensores</h3>
+<ul>
+    {% for key, value in sensores.items() %}
+        <li>{{ key }} : {{ value }}</li>
+    {% endfor %}
+    
+</ul>
+<p>Voltar para <a href="/home">página inicial</a>!</p>
+{% endblock %}
